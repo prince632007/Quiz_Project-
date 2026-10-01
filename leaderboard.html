@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard - Quiz</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                Quiz
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="leaderboard.html">Leaderboard</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Leaderboard Section -->
+    <main class="leaderboard-page">
+        <div class="leaderboard-container">
+            <h1>Quiz Leaderboard</h1>
+            <p class="leaderboard-description">
+                See the scores of students who completed the quiz.
+            </p>
+            <!-- Leaderboard Table -->
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Student Name</th>
+                            <th>Score</th>
+                            <th>Percentage</th>
+                        </tr>
+                    </thead>
+                    <tbody id="leaderboardBody">
+
+                    </tbody>
+                </table>
+            </div>
+            <!-- Back Button -->
+            <div class="leaderboard-buttons">
+                <a href="index.html" class="start-btn">
+                    Back to Home
+                </a>
+                <a href="quiz.html" class="start-btn">
+                    Take Quiz
+                </a>
+            </div>
+        </div>
+    </main>
+    <!-- JavaScript -->
+    <script src="leaderboard.js"></script>
+</body>
+</html>
