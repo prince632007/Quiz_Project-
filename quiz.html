@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Quiz</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                Quiz
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="leaderboard.html">Leaderboard</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Quiz Section -->
+    <main class="quiz-page">
+        <div class="quiz-container">
+            <!-- Quiz Header -->
+            <div class="quiz-header">
+                <div>
+                    <h1>Online Quiz</h1>
+                    <p>
+                        Student:
+                        <span id="studentName">Student</span>
+                    </p>
+                </div>
+                <div class="timer">
+                    <span>Time Left</span>
+                    <strong id="timer">10:00</strong>
+                </div>
+            </div>
+            <!-- Question Information -->
+            <div class="question-info">
+                <span id="questionNumber">
+                    Question 1 of 10
+                </span>
+            </div>
+            <!-- Question -->
+            <div class="question-box">
+                <h2 id="question">
+                    Loading question...
+                </h2>
+            </div>
+            <!-- Options -->
+            <div id="options" class="options">
+                <!-- JavaScript will add options here -->
+            </div>
+            <!-- Navigation Buttons -->
+            <div class="quiz-buttons">
+                <button id="previousBtn" type="button">
+                    Previous
+                </button>
+                <button id="nextBtn" type="button">
+                    Next →
+                </button>
+            </div>
+            <!-- Submit Button -->
+            <button id="submitBtn" class="submit-btn" type="button">
+                Submit Quiz
+            </button>
+        </div>
+    </main>
+    <!-- JavaScript -->
+    <script src="quiz.js"></script>
+</body>
+</html>
