@@ -1,0 +1,89 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Result - Quiz</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                Quiz
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="leaderboard.html">Leaderboard</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Result Section -->
+    <main class="result-page">
+
+        <div class="result-container">
+
+            <h1>Quiz Completed!</h1>
+
+            <p class="result-message">
+                Well done, <span id="studentName">Student</span>!
+            </p>
+
+
+            <!-- Score -->
+            <div class="score-box">
+
+                <p>Your Score</p>
+
+                <h2>
+                    <span id="score">0</span>
+                    /
+                    <span id="total">10</span>
+                </h2>
+
+            </div>
+
+
+            <!-- Result Details -->
+            <div class="result-details">
+
+                <div class="result-card">
+                    <h3>Correct Answers</h3>
+                    <p id="correct">0</p>
+                </div>
+
+                <div class="result-card">
+                    <h3>Wrong Answers</h3>
+                    <p id="wrong">0</p>
+                </div>
+
+                <div class="result-card">
+                    <h3>Percentage</h3>
+                    <p id="percentage">0%</p>
+                </div>
+
+            </div>
+
+
+            <!-- Buttons -->
+            <div class="result-buttons">
+
+                <a href="quiz.html" class="start-btn">
+                    Try Again
+                </a>
+
+                <a href="leaderboard.html" class="start-btn">
+                    View Leaderboard
+                </a>
+
+            </div>
+
+        </div>
+
+    </main>
+    <!-- JavaScript -->
+    <script src="result.js"></script>
+</body>
+</html>
